@@ -1,0 +1,211 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Varela&display=swap');
+
+$font-family:'Varela';
+$heading-font-family:'Krona One';
+
+//General style
+html {
+  scroll-behavior: smooth;
+}
+
+.v-toolbar, .v-content, .v-card, .responsiveMenu{
+  background-color: #00050a !important;
+}
+
+.rounded-circle{
+  background-color: #0e171a !important;
+}
+
+.v-application {
+  font-family: $font-family, sans-serif !important;
+}
+
+.v-application p{
+  text-align: justify !important;
+}
+
+.v-application h1,
+  .v-application h2,
+  .v-application h3,
+  .v-application h4,
+  .v-application h5,
+  .v-application h6 {
+    font-family: $heading-font-family, sans-serif !important;
+    margin: 0 !important;
+}
+
+.aqua {
+  color: #18FFFF !important;
+}
+
+//Navbar style
+#nav{
+  max-width: 100vw;
+}
+
+#nav, .responsiveMenu{
+  font-family: $heading-font-family, sans-serif !important;
+}
+
+.responsiveMenu a{
+  color: white !important;
+}
+
+//Hero style
+.big{
+  font-size: 3rem;
+}
+
+#hero{
+  margin: 0;
+}
+
+//Benefits style
+#benefits, #current-event, #join{
+  padding: 50px 40px 50px 40px;
+}
+
+#benefits p, #current-event div{
+  text-align: center !important;
+}
+
+//About us style
+#us{
+  padding-top: 100px;
+}
+
+//Current event style
+.time{
+  height: 150px;
+  width: 150px;
+  padding-top: 50px;
+  color: #18FFFF !important;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .time {
+    height: 15vw;
+    width: 15vw;
+    padding-top: 5vw;
+  }
+
+  .time h2{
+    font-size: medium;
+  }
+
+  .time h6{
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .time {
+    height: 120px;
+    width: 120px;
+    padding-top: 33px;
+  }
+}
+
+//Join us style
+.join-element{
+  float: left;
+  width: 500px;
+}
+
+.mountain{
+  width: 600px;
+  /* shape-outside: ellipse(28.33% 41.77% at 316px 209px);
+  shape-margin: 1rem; */
+}
+
+.explosion{
+  margin-top: -250px;
+}
+
+.join-text{
+  width: 400px;
+  font-size: 1.2em;
+}
+
+.join-text1{
+  padding-top: 150px;
+  margin-left: -225px;
+  margin-right: 200px;
+}
+
+.join-text2{
+  margin-top: -130px;
+  margin-right: -320px;
+}
+
+.join-text3{
+  margin-top: 50px;
+  margin-left: -125px;
+  margin-right: 200px;
+}
+
+#join h1{
+  width: 100% !important;
+}
+
+@media only screen and (max-width: 1264px){
+  .join-element{
+    width: 300px;
+  }
+
+  .mountain{
+    width: 360px;
+  }
+
+  .explosion{
+    margin-top: -70px;
+  }
+
+  .v-application .join-text{
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .join-text2{
+    margin-top: 0px;
+    margin-right: -200px;
+  }
+
+  .join-text3{
+    margin-top: 10px;
+    margin-left: -100px;
+  }
+}
+
+.join-element-responsive{
+  width: 250px;
+}
+
+.mountain-responsive{
+  width: 300px;
+}
+
+.v-application .join-text-responsive{
+  width: 60vw;
+  text-align: center !important;
+}
+
+//Contact style
+.contact-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+//Footer style
+#footer .v-card{
+  background-color: #121212;
+}
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
